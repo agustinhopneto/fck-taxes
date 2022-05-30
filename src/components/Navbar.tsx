@@ -23,17 +23,21 @@ export function Navbar({ openDrawer, isLargeScreen }: NavbarProps) {
     >
       <Logo />
       <HStack spacing={4}>
-        <Link
-          href="https://gist.github.com/lucaspar/2c20754b37920217678cebb64170cb7a"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Gist INSS
-        </Link>
+        {isLargeScreen && (
+          <>
+            <Link
+              href="https://gist.github.com/lucaspar/2c20754b37920217678cebb64170cb7a"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Gist INSS
+            </Link>
 
-        <Link href="https://github.com" target="_blank" rel="noreferrer">
-          GitHub
-        </Link>
+            <Link href="https://github.com" target="_blank" rel="noreferrer">
+              GitHub
+            </Link>
+          </>
+        )}
         {!isLargeScreen && (
           <IconButton
             variant="unstyled"
