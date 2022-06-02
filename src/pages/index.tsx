@@ -190,7 +190,7 @@ export default function Home() {
               <Card
                 iconType="positive"
                 colorType="positive"
-                title="Banefícios"
+                title="Benefícios"
                 value={taxValues.benefitsValue || 0}
               />
               <Card
